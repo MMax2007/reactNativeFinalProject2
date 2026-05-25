@@ -1,0 +1,183 @@
+import { GameColors } from '@/constants/theme'
+import { StyleSheet } from 'react-native'
+import { getTheme } from './storage/colorTheme'
+
+export function createStyles(currentTheme: any) {
+    return StyleSheet.create(
+        {
+            backgroundRect: {
+                width: '100%',
+                height: '100%',
+                backgroundColor: currentTheme?.background,
+                justifyContent: 'center',
+                flex: 1,
+            },
+            foregroundRect: {
+                margin: 30,
+                backgroundColor: currentTheme?.mainElements,
+                borderColor: currentTheme?.borders,
+                borderWidth: 5,
+                alignItems: 'center',
+                flex: 1,
+            },
+            titleText: {
+                fontSize: 36,
+                fontWeight: 700,
+                padding: 50,
+                color: currentTheme?.text,
+                textAlign: 'center',
+            },
+            buttonBlockMain: {
+                backgroundColor: currentTheme?.mainElements,
+                borderColor: currentTheme?.borders,
+                borderWidth: 5,
+                padding: 100,
+                width: 700,
+                alignItems: 'center',
+                gap: 20,
+                height: '76.5%',
+                top: -5,
+            },
+            menuBtn: {
+                backgroundColor: currentTheme?.mainElements,
+                borderColor: currentTheme?.borders,
+                borderWidth: 5,
+                width: 500,
+            },
+            menuBtnText: {
+                fontSize: 24,
+                fontWeight: 500,
+                padding: 10,
+                color: currentTheme?.text,
+                textAlign: 'center',
+            },
+            titleBlock: {
+                backgroundColor: currentTheme?.mainElements,
+                borderColor: currentTheme?.borders,
+                width: '100.5%',
+                borderWidth: 5,
+                padding: 20,
+            },
+            subtitleBlock: {
+                backgroundColor: currentTheme?.mainElements,
+                borderColor: currentTheme?.borders,
+                width: '100.5%',
+                borderWidth: 5,
+                padding: 10,
+            },
+            subtitleText: {
+                fontSize: 24,
+                fontWeight: 700,
+                padding: 30,
+                color: currentTheme?.text,
+                textAlign: 'center',
+            },
+            settingsBlockMain: {
+                backgroundColor: currentTheme?.mainElements,
+                borderColor: currentTheme?.borders,
+                borderWidth: 5,
+                padding: 100,
+                width: '75%',
+                alignItems: 'center',
+                gap: 100,
+                height: '86%',
+                top: -5,
+            },
+            horizontal: {
+                flexDirection: 'row',
+                width: '80%',
+                alignItems: 'center',
+                gap: 50,
+            },
+            interfaceText: {
+                fontSize: 18,
+                fontWeight: 500,
+                padding: 10,
+                color: currentTheme?.text,
+                textAlign: 'center',
+                justifyContent: 'space-between'
+            },
+            picker: {
+                backgroundColor: currentTheme?.mainElements,
+                borderColor: currentTheme?.borders,
+                borderWidth: 5,
+                width: 200,
+                padding: 10,
+                fontSize: 18,
+                fontWeight: 500,
+                color: currentTheme?.text,
+                textAlign: 'center',
+            },
+            pickerText: {
+                fontSize: 18,
+                fontWeight: 500,
+                color: currentTheme?.text,
+                textAlign: 'center',
+            },
+            devPanelBlockMain: {
+                backgroundColor: currentTheme?.mainElements,
+                borderColor: currentTheme?.borders,
+                borderWidth: 5,
+                padding: 100,
+                width: '75%',
+                alignItems: 'center',
+                gap: 20,
+                height: '86%',
+                top: -5,
+            },
+            cardBase: {
+                backgroundColor: currentTheme?.mainElements,
+                borderColor: currentTheme?.borders,
+                borderWidth: 5,
+                padding: 20,
+                margin: 25,
+                gap: 15,
+                width: 500
+            },
+            cardTitle: {
+                fontSize: 24,
+                fontWeight: 700,
+                padding: 10,
+                color: currentTheme?.text,
+                textAlign: 'center',
+            },
+            cardText: {
+                fontSize: 18,
+                fontWeight: 500,
+                padding: 10,
+                color: currentTheme?.text,
+                textAlign: 'center',
+            },
+            btnMini: {
+                backgroundColor: currentTheme?.mainElements,
+                borderColor: currentTheme?.borders,
+                borderWidth: 5,
+                width: 200,
+            },
+            btnMiniText: {
+                fontSize: 16,
+                fontWeight: 500,
+                padding: 10,
+                color: currentTheme?.text,
+                textAlign: 'center',
+            },
+            interfaceBtn: {
+                backgroundColor: currentTheme?.mainElements,
+                borderColor: currentTheme?.borders,
+                borderWidth: 5,
+                width: 500,
+                margin: 10,
+            },
+            input: {
+                backgroundColor: currentTheme?.background,
+                borderColor: currentTheme?.borders,
+                borderWidth: 5,
+                margin: 25,
+                fontSize: 24,
+                color: currentTheme?.text,
+                padding: 10,
+                width: 700
+            },
+        }
+    )
+}
